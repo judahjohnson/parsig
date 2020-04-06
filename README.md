@@ -89,4 +89,4 @@ We scraped the English Pārsīg dictionary on http://www.parsig.org/dictionary.h
 
 (c) Following packages have been used (pip install <name> command can be used to install, e.g., pip install nltk): corenlp-pywrap, Cython, gensim, more-itertools, nltk, numpy, pandas, pdfminer, scipy, and xlrd.
   
-(d) List each txt or pdf file path to be translated on parsig/path_list.xlsx column "a" and its corresponding terms path on column "b" on the same row, like the example which has been uploaded. Each file representing terms, is an xlsx file. This file has to have a single column "a", and corresponding terms have to be listed on this column.
+(d) List each txt or pdf file path to be translated, on parsig/path_list.xlsx column "a", and its corresponding terms path, on column "b" on the same row, like the example which has been uploaded. Each file representing terms, is an xlsx file. This file has to have a single column "a", and corresponding terms have to be listed on this column.
