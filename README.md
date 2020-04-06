@@ -1,18 +1,22 @@
 # 1. Word sense disambiguation for English homonyms
-It is easy to implement this feature for words which have multiple meanings, e.g., 2 senses for word "pound" are (a) unit of weight (b) to beat (check word_sense_disambiguation.py in parsig/modules/ folder). However, since we didn't create a dictionary of English homonyms which is machine readable, we didn't enable this feature. We need help with creating a dictionary of English homonyms in excel. Following is an example: 1st column: English word or phrase, 2nd column: 1st meaning, 3rd column: 1st sense, 4th column: 2nd meaning, 5th column: 2nd sense, etc. So, corresponding rows for word "pound" in the excel file is as follows (we just have 2 columns for the time being): 
+It is easy to implement this feature for words which have multiple meanings, e.g., 2 senses for word "pound" are (a) unit of weight (b) to beat (check word_sense_disambiguation.py in parsig/modules/ folder). However, since we didn't create a dictionary of English homonyms which is machine readable, we didn't enable this feature. We need help with creating a dictionary of English homonyms in excel. Following is an example: 1st column: English word or phrase, 2nd column: 1st meaning, 3rd column: 1st sense, 4th column: 2nd meaning, 5th column: 2nd sense, etc. So, corresponding rows for word "pound" in the excel file is as follows (we just have 2 columns for the time being):
+
 1st column: pound, 2nd column: pound, 3rd column: weight, 4th column: kōb, 5th column: beat
+
 1st column: pound, 2nd column: pound, 3rd column: weight, 4th column: kuftan, 5th column: beat
 
 # 2. English phrasal verbs
 This feature is also not implemented, as we didn't create a dictionary of English phrasal verbs. These verbs have multiple meanings occasionally, and we need help with creating a dictionary of English phrasal verbs in excel. 
-Following is an example of the corresponding row for phrase "break off" (we just have 2 columns for the time being): 
+Following is an example of the corresponding row for phrase "break off" (we just have 2 columns for the time being):
+
 1st column: break_off, 2nd column: ō ham madan, 3rd column: end, 4th column: appārēnīdan, 5th column: remove, 6th column: peyrāmīdan, 7th column: stop
 
 # 3. Transitive vs intransitive verbs 
 This feature is also not implemented, since we didn't create a corresponding column for verbs. 
 
 # 4. Verb tenses
-We have implemented following verb tenses (check verb_tense_and_inflection.py and dep_pos_based_suffix.py): 
+We have implemented following verb tenses (check verb_tense_and_inflection.py and dep_pos_based_suffix.py):
+
 (a) Following examples are assumed to be past tense (we have to make sure if this assumption is correct):
 
 I went -> šud ham
@@ -80,6 +84,9 @@ We scraped the English Pārsīg dictionary on http://www.parsig.org/dictionary.h
 
 # 8. Requirements to run the program
 (a) Python 3 (program was first written in Python 2.7, however it was modified in Python 3.8.2 to fix some bugs). Check https://www.python.org/downloads/
+
 (b) For dependency parsing, NER, and POS tagging, stanford-corenlp-full-2017-06-09 has been used. Unzip files in parsig/tanford-corenlp-full-2017-06-09/ folder. Check https://stanfordnlp.github.io/CoreNLP/history.html and https://stanfordnlp.github.io/CoreNLP/download.html. If a different version of Stanford CoreNLP is used, name of the folder has to be changed in main.py (check main.py in parsig/ folder)
+
 (c) Following packages have been used (pip install <name> command can be used to install, e.g., pip install nltk): corenlp-pywrap, Cython, gensim, more-itertools, nltk, numpy, pandas, pdfminer, scipy, and xlrd.
+  
 (d) List each txt or pdf file path to be translated on parsig/path_list.xlsx column "a" and its corresponding terms path on column "b" on the same row, like the example which has been uploaded. Each file representing terms, is an xlsx file. This file has to have a single column "a", and corresponding terms have to be listed on this column.
