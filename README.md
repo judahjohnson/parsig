@@ -12,33 +12,39 @@ Following is an example of the corresponding row for phrase "break off" (we just
 This feature is also not implemented, since we didn't create a corresponding column for verbs. 
 
 # 4. Verb tenses
-We have implemented following verb tenses (check verb_tense_and_inflection.py and dep_pos_based_suffix.py). Following examples are assumed to be past tense (we have to make sure if this assumption is correct):
-(a) I went -> šud ham
-(b) I was happy -> šād būd ham
-(c) I was defeated -> stōbēnīd ham
-(d) I was going -> šud ham
-(e) I had been going -> šud ham
-(f) I have been going -> šud ham. 
-Following examples are assumed to be present tense (we have to make sure if this assumption is correct):
-(g) I go -> šavam
-(h) I am happy -> šād bavam
-(i) I am defeated -> stōb kunam
-(j) I am going -> šavam
-(k) I will be happy -> šād bavam
-(l) I will go -> šavam
-(m) I will be defeated -> stōb kunam
-(n) I will be going -> šavam. 
-Following examples are assumed to be present perfect tense (we have to make sure if this assumption is correct):
-(o) I have gone -> šud estam
-(p) I have been defeated -> stōbēnīd estam. 
-If there's a modal, e.g., "should" or "could", we'll apply the following rule:
-(q) I should have been gone -> šāyam šudan
-(r) I should have been defeated -> šāyam stōbēnīdan. 
-Following examples are all assumed to be past perfect tense (we have to make sure if this assumption is correct):
-(s) I had gone -> šud būd ham
-(t) I had been defeated -> stōbēnīd būd ham
-(u) should had been gone -> šud būd ham
-(v) should had been defeated -> stōbēnīd būd ham. 
+We have implemented following verb tenses (check verb_tense_and_inflection.py and dep_pos_based_suffix.py): 
+(a) Following examples are assumed to be past tense (we have to make sure if this assumption is correct):
+I went -> šud ham
+I was happy -> šād būd ham
+I was defeated -> stōbēnīd ham
+I was going -> šud ham
+I had been going -> šud ham
+I have been going -> šud ham
+(b) Following examples are assumed to be present tense (we have to make sure if this assumption is correct):
+I go -> šavam
+I am happy -> šād bavam
+I am defeated -> stōb kunam
+I am going -> šavam
+I will be happy -> šād bavam
+I will go -> šavam
+I will be defeated -> stōb kunam
+I will be going -> šavam
+(c) Following examples are assumed to be present perfect tense (we have to make sure if this assumption is correct):
+I have gone -> šud estam
+I have been defeated -> stōbēnīd estam
+(d) If there's a modal, e.g., "should" or "could", we'll apply the following rule:
+I should have been gone -> šāyam šudan
+I should have been defeated -> šāyam stōbēnīdan
+(e) Following examples are all assumed to be past perfect tense (we have to make sure if this assumption is correct):
+
+I had gone -> šud būd ham
+
+I had been defeated -> stōbēnīd būd ham
+
+should had been gone -> šud būd ham
+
+should had been defeated -> stōbēnīd būd ham
+
 This feature is disabled for the time being, to improve the performance. We need to know if any of these rules are incorrect, or if we could improve them.
 
 # 5. English vs Pārsīg order of words
