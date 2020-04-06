@@ -18,7 +18,7 @@ We have implemented following verb tenses (check verb_tense_and_inflection.py an
 (c) I was defeated -> stōbēnīd ham
 (d) I was going -> šud ham
 (e) I had been going -> šud ham
-(f) I have been going -> šud ham
+(f) I have been going -> šud ham. 
 Following examples are assumed to be present tense (we have to make sure if this assumption is correct):
 (g) I go -> šavam
 (h) I am happy -> šād bavam
@@ -27,18 +27,18 @@ Following examples are assumed to be present tense (we have to make sure if this
 (k) I will be happy -> šād bavam
 (l) I will go -> šavam
 (m) I will be defeated -> stōb kunam
-(n) I will be going -> šavam 
+(n) I will be going -> šavam. 
 Following examples are assumed to be present perfect tense (we have to make sure if this assumption is correct):
 (o) I have gone -> šud estam
-(p) I have been defeated -> stōbēnīd estam 
+(p) I have been defeated -> stōbēnīd estam. 
 If there's a modal, e.g., "should" or "could", we'll apply the following rule:
 (q) I should have been gone -> šāyam šudan
-(r) I should have been defeated -> šāyam stōbēnīdan
+(r) I should have been defeated -> šāyam stōbēnīdan. 
 Following examples are all assumed to be past perfect tense (we have to make sure if this assumption is correct):
 (s) I had gone -> šud būd ham
 (t) I had been defeated -> stōbēnīd būd ham
 (u) should had been gone -> šud būd ham
-(v) should had been defeated -> stōbēnīd būd ham
+(v) should had been defeated -> stōbēnīd būd ham. 
 This feature is disabled for the time being, to improve the performance. We need to know if any of these rules are incorrect, or if we could improve them.
 
 5. English vs Pārsīg order of words
