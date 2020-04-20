@@ -4,6 +4,7 @@ It is easy to implement this feature for words which have multiple meanings, e.g
 1st column: pound, 2nd column: pound, 3rd column: weight, 4th column: kōb, 5th column: beat
 
 1st column: pound, 2nd column: pound, 3rd column: weight, 4th column: kuftan, 5th column: beat
+
 For corrections and recommendations, please contact us at english.parsig@gmail.com
 
 # 2. English phrasal verbs
