@@ -1,5 +1,5 @@
 # About
-This program can be used to translate text from English to Pārsīg. As input text, .pdf and .txt files could be used. For corrections and recommendations, please contact us at english.parsig@gmail.com. Following are some points about this program. 
+This program has been written in Python and can be used to translate text from English to Pārsīg. As input text, .pdf and .txt files could be used. For corrections and recommendations, please contact us at english.parsig@gmail.com. Following are some points about this program. 
 
 # 1. Word sense disambiguation for English homonyms
 It is easy to implement this feature for words which have multiple meanings, e.g., 2 senses for word "pound" are (a) unit of weight (b) to beat (check word_sense_disambiguation.py in parsig/modules/ folder). However, since we didn't create a dictionary of English homonyms which is machine readable, we didn't enable this feature. We need help with creating a dictionary of English homonyms in excel. Following is an example: 1st column: English word or phrase, 2nd column: 1st meaning, 3rd column: 1st sense, 4th column: 2nd meaning, 5th column: 2nd sense, etc. So, corresponding rows for word "pound" in the excel file is as follows (we just have 2 columns for the time being):
