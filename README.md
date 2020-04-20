@@ -12,6 +12,7 @@ This feature is also not implemented, as we didn't create a dictionary of Englis
 Following is an example of the corresponding row for phrase "break off" (we just have 2 columns for the time being):
 
 1st column: break_off, 2nd column: ō ham madan, 3rd column: end, 4th column: appārēnīdan, 5th column: remove, 6th column: peyrāmīdan, 7th column: stop
+
 For corrections and recommendations, please contact us at english.parsig@gmail.com
 
 # 3. Transitive vs intransitive verbs 
