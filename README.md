@@ -88,7 +88,7 @@ We scraped the English Pārsīg dictionary on http://www.parsig.org/dictionary.h
 # 8. Requirements to run the program
 (a) Python 3 (program was first written in Python 2.7, however it was modified in Python 3.8.2 to fix some bugs). Check https://www.python.org/downloads/
 
-(b) For dependency parsing, NER, and POS tagging, stanford-corenlp-full-2017-06-09 has been used. Unzip files in parsig/tanford-corenlp-full-2017-06-09/ folder. Check https://stanfordnlp.github.io/CoreNLP/history.html and https://stanfordnlp.github.io/CoreNLP/download.html. If a different version of Stanford CoreNLP is used, name of the folder has to be changed in main.py (check main.py in parsig/ folder)
+(b) For dependency parsing, NER, and POS tagging, stanford-corenlp-full-2017-06-09 has been used. Unzip files in parsig/stanford-corenlp-full-2017-06-09/ folder. Check https://stanfordnlp.github.io/CoreNLP/history.html and https://stanfordnlp.github.io/CoreNLP/download.html. If a different version of Stanford CoreNLP is used, name of the folder has to be changed in main.py (check main.py in parsig/ folder)
 
 (c) Following packages have been used (pip install <name> command can be used to install, e.g., pip install nltk): corenlp-pywrap, Cython, gensim, more-itertools, nltk, numpy, pandas, pdfminer, scipy, and xlrd.
   
